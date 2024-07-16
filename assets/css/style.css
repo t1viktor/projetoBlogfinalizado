@@ -1,0 +1,114 @@
+
+:root{
+    --backgroundMain:#4b6382;
+    --backgroundAll:#071739 ;
+    --darkColor: #070325;
+    --text:#cdd5db;
+    --text2: #161616;
+    --hover:#a4b5c4;
+}
+
+#feed{
+    background-color: var(--backgroundAll);
+    margin: 0 13%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px 10px;
+    border: solid 1px var(--hover);
+    border-bottom: none;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    gap: 50px;
+}
+
+.postagemValue{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--backgroundMain);
+    width: 100%;
+    min-height: 80px;
+    border-radius: 8px;
+    border: 1px solid var(--text);
+    padding: 10px;
+    gap: 5px;
+    
+}
+
+.textPostValue{
+ background-color: var(--hover);
+ min-height: 60px;
+ width: 100%;
+ border-radius: 8px;
+ color: var(--text2);
+ padding: 6px;
+ font-size: 10px;
+ border: 1px solid var(--darkColor);
+}
+
+.abaComentarios{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.comentarioValue{
+  height: 60px;
+  background-color: var(--backgroundAll);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-size: 13px;
+  color: var(--text);
+  padding: 6px;
+  overflow-y: auto;
+  border: solid 1px var(--text);
+}
+
+.comentarioAside{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 5px;
+}
+
+.criaComentario{
+    resize: none;
+    width: 95%;
+    background-color: var(--hover);
+    border: solid 1px var(--text2);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.enviarComentario{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: solid 1px var(--text);
+    background-color: var(--darkColor);
+    color: var(--text);
+    font-size: 30px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.enviarComentario:hover{
+    background-color: var(--text2);
+    color: green;
+}
+
+.excluir {
+    background-color: var(--darkColor);
+    border-radius: 6px;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.excluir:hover {
+    background-color: darkred;
+}
+
